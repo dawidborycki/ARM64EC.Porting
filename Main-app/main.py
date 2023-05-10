@@ -74,8 +74,7 @@ class MainWindowWidget(QtWidgets.QWidget):
 
         # Display signal
         signal = filtersLib.getInputSignal()
-        seriesSignal = self.prepareSeries(signal, filtersLib.getSignalLength())    
-        #self.chart.addAxis()    
+        seriesSignal = self.prepareSeries(signal, filtersLib.getSignalLength())        
         self.chart.addSeries(seriesSignal)
 
         # Run convolution
