@@ -83,8 +83,8 @@ class MainWindowWidget(QtWidgets.QWidget):
         filtersLib.getInputSignalAfterFilter.restype = ctypes.POINTER(ctypes.c_double)        
 
         # Display signal after convolution
-        signalAfterConvolution = filtersLib.getInputSignalAfterFilter()
-        seriesSignalAfterFilter = self.prepareSeries(signalAfterConvolution, filtersLib.getSignalLength())                        
+        signalAfterFilter = filtersLib.getInputSignalAfterFilter()
+        seriesSignalAfterFilter = self.prepareSeries(signalAfterFilter, filtersLib.getSignalLength())                        
         self.chart.addSeries(seriesSignalAfterFilter)        
 
         # Configure y-axis
