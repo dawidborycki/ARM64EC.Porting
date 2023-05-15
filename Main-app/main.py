@@ -5,8 +5,8 @@ from PySide6.QtCharts import QChart, QChartView, QLineSeries, QChartView, QValue
 
 rootPath = os.getcwd() 
 
-vectorsLibName = os.path.join(rootPath, "Dependencies\\Vectors.dll")
-filtersLibName = os.path.join(rootPath, "Dependencies\\Filters.dll")
+vectorsLibName = os.path.join(rootPath, "Dependencies\\Arm64EC-release\\Vectors.dll")
+filtersLibName = os.path.join(rootPath, "Dependencies\\Arm64EC-release\\Filters.dll")
 
 class MainWindowWidget(QtWidgets.QWidget):
     def __init__(self):

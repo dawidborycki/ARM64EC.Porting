@@ -44,7 +44,7 @@ double performCalculations() {
 
     for (int i = 0; i < trials; i++) {
         dotProduct(ramp1, ramp2, rampLength);
-    }
+    }    
 
     return msElapsedTime(start);
 }
