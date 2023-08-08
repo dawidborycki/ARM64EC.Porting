@@ -1,6 +1,4 @@
-﻿#pragma once
-
-#include "Vectors.h"
+﻿#include "Vectors.h"
 
 int* generateRamp(int startValue, int len) {
     int* ramp = new int[len];
